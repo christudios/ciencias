@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Salud Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-header">
+            <img src="../img/logo 34253.png" alt="">
+        </div>
+        <input type="checkbox" id="toggle-menu">
+        <label class="menu-hamburguesa" for="toggle-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <nav class="barra-navegacion">
+            <ul class="ul-nav">
+                <li class="li-nav"><a class="link-nav" href="../index.html">Menú</a></li>
+                <li class="li-nav"><a class="link-nav" href="cuestionario.html">Cuestionario</a></li>
+                <li class="li-nav"><a class="link-nav" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>📧 Contáctanos</h1>
+            <p class="subtitle">¿Tienes preguntas sobre salud digital o necesitas más información? Estamos aquí para ayudarte</p>
+        </section>
+
+        <div class="contact-container">
+            <!-- Información de Contacto -->
+            <div class="contact-info">
+                <h2>👥 Nuestro Equipo</h2>
+                
+                <div class="team-section">
+                    <h3>Especialistas en Salud Digital</h3>
+                    
+                    <div class="team-member">
+                        <h4>👨‍💻 Matías Galaz</h4>
+                        <p><strong>Desarrollador Web & Especialista en Tecnología</strong></p>
+                        <p>Experto en desarrollo de soluciones digitales y análisis de impacto tecnológico en la salud.</p>
+                        <p>📧 Email: <a href="mailto:matias.galaz@universalnews.com">matias.galaz@universalnews.com</a></p>
+                        <p>💼 LinkedIn: <a href="#" target="_blank">linkedin.com/in/matiasgalaz</a></p>
+                    </div>
+
+                    <div class="team-member">
+                        <h4>👨‍⚕️ Christopher Espinoza</h4>
+                        <p><strong>Investigador en Salud Digital</strong></p>
+                        <p>Especialista en análisis de efectos de dispositivos electrónicos en la salud física y mental.</p>
+                        <p>📧 Email: <a href="mailto:christopher.espinoza@universalnews.com">christopher.espinoza@universalnews.com</a></p>
+                        <p>💼 LinkedIn: <a href="#" target="_blank">linkedin.com/in/christopherespinoza</a></p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h3>📞 Información Adicional</h3>
+                    <ul>
+                        <li><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 - 18:00 hrs</li>
+                        <li><strong>Tiempo de Respuesta:</strong> 24-48 horas hábiles</li>
+                        <li><strong>Ubicación:</strong> Santiago, Chile</li>
+                        <li><strong>Teléfono:</strong> +56 9 XXXX XXXX</li>
+                    </ul>
+                </div>
+
+                <div class="info-box" style="margin-top: 2rem;">
+                    <h3>💬 Temas de Consulta</h3>
+                    <ul>
+                        <li>Efectos de dispositivos en la salud</li>
+                        <li>Regulaciones y normativas digitales</li>
+                        <li>Hábitos digitales saludables</li>
+                        <li>Ergonomía y prevención de lesiones</li>
+                        <li>Programas de bienestar digital</li>
+                        <li>Colaboraciones y proyectos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Formulario de Contacto -->
+            <div class="contact-form">
+                <h2>📝 Envíanos un Mensaje</h2>
+                
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="Ej: Juan Pérez">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="tu.email@ejemplo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+56 9 XXXX XXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-person">¿A quién deseas contactar? <span class="required">*</span></label>
+                        <select id="contact-person" name="contact-person" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="matias">Matías Galaz</option>
+                            <option value="christopher">Christopher Espinoza</option>
+                            <option value="ambos">Ambos especialistas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Asunto <span class="required">*</span></label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Seleccione un tema</option>
+                            <option value="consulta-salud">Consulta sobre salud digital</option>
+                            <option value="regulaciones">Información sobre regulaciones</option>
+                            <option value="habitos">Mejorar hábitos digitales</option>
+                            <option value="ergonomia">Ergonomía y prevención</option>
+                            <option value="colaboracion">Propuesta de colaboración</option>
+                            <option value="prensa">Consulta de prensa</option>
+                            <option value="otro">Otro tema</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje <span class="required">*</span></label>
+                        <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    
+                    <p class="form-note">* Campos obligatorios. Tus datos están protegidos y solo serán usados para responder tu consulta.</p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="empresa-footer">
+            <div class="div-footer" id="footer-inicio">
+                <h3>Universal News</h3>
+                <p>Tu fuente confiable de información actualizada las 24 horas del día</p>
+            </div>
+            <div class="div-footer">
+                <h3>Secciones</h3>
+                <div class="ctn-links-footer">
+                    <a href="#">Tecnología</a>
+                    <a href="cuestionario.html">Cuestionario</a>
+                    <a href="#">Deportes</a>
+                    <a href="#">Política</a>
+                </div>
+            </div>
+            <div class="div-footer">
+                <h3>Acerca de</h3>
+                <div class="ctn-links-footer">
+                    <a href="#">Nosotros</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Publicidad</a>
+                </div>
+            </div>
+            <div class="div-footer">
+                <h3>Legal</h3>
+                <div class="ctn-links-footer">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+        <div class="div-footer" id="cierre-footer">
+            <p>&copy; 2025 Universal News - Creado por Matias Galaz</p>
+        </div>
+    </footer>
+
+    <script>
+        // Funcionalidad del formulario de contacto
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                contactPerson: document.getElementById('contact-person').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Simular envío del formulario
+            alert(`¡Gracias por contactarnos, ${formData.name}!\n\nTu mensaje ha sido enviado exitosamente a nuestro equipo. Te responderemos en las próximas 24-48 horas hábiles.`);
+            
+            // Opcional: reiniciar el formulario
+            this.reset();
+        });
+    </script>
+</body>
+</html>

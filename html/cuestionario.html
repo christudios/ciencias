@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Hábitos Digitales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/cuestionario.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo-header">
+            <img src="../img/logo 34253.png" alt="">
+        </div>
+        <input type="checkbox" id="toggle-menu">
+        <label class="menu-hamburguesa" for="toggle-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <nav class="barra-navegacion">
+            <ul class="ul-nav">
+                <li class="li-nav"><a class="link-nav" href="../index.html">Menú</a></li>
+                <li class="li-nav"><a class="link-nav" href="cuestionario.html">Cuestionario</a></li>
+                <li class="li-nav"><a class="link-nav" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>🎯 Compromiso con el Uso Responsable</h1>
+            <p class="subtitle">Evalúa tus hábitos digitales y crea un plan de acción personalizado</p>
+            
+            <div class="commitment-box">
+                <h3>🎯 Nuestro Compromiso</h3>
+                <p style="color: var(--onaccent2); margin-bottom: 2rem; line-height: 1.7;">Basándonos en la evidencia científica sobre los efectos en la salud del uso de dispositivos electrónicos, nos comprometemos a:</p>
+                <ul class="commitment-list">
+                    <li>Promover el equilibrio digital entre el uso tecnológico y las actividades offline</li>
+                    <li>Educar sobre riesgos específicos de cada dispositivo y cómo mitigarlos</li>
+                    <li>Fomentar prácticas ergonómicas adecuadas para cada tipo de dispositivo</li>
+                    <li>Establecer límites saludables basados en recomendaciones de expertos</li>
+                    <li>Crear conciencia sobre la higiene del sueño y la protección contra la luz azul</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="form-container">
+            <form id="digital-habits-form">
+                <!-- SECCIÓN I -->
+                <div class="form-section">
+                    <h2 class="section-title">I. HÁBITOS GENERALES DE USO</h2>
+                    
+                    <div class="question-block">
+                        <label class="question-label">1. ¿Cuántas horas al día estima que utiliza dispositivos electrónicos en total?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q1" id="q1-1" value="menos-2">
+                                <label for="q1-1">Menos de 2 horas</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q1" id="q1-2" value="2-4">
+                                <label for="q1-2">2-4 horas</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q1" id="q1-3" value="4-6">
+                                <label for="q1-3">4-6 horas</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q1" id="q1-4" value="6-8">
+                                <label for="q1-4">6-8 horas</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q1" id="q1-5" value="mas-8">
+                                <label for="q1-5">Más de 8 horas</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <label class="question-label">2. ¿Realiza pausas activas durante el uso prolongado de dispositivos?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q2" id="q2-1" value="30min">
+                                <label for="q2-1">Sí, cada 30 minutos</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q2" id="q2-2" value="60min">
+                                <label for="q2-2">Sí, cada 60 minutos</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q2" id="q2-3" value="ocasional">
+                                <label for="q2-3">Ocasionalmente</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q2" id="q2-4" value="casi-nunca">
+                                <label for="q2-4">Casi nunca</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q2" id="q2-5" value="nunca">
+                                <label for="q2-5">Nunca</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <label class="question-label">3. ¿Conoce la regla 20-20-20 para descanso visual?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q3" id="q3-1" value="si-practico">
+                                <label for="q3-1">Sí y la practico consistentemente</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q3" id="q3-2" value="conozco-no-siempre">
+                                <label for="q3-2">La conozco pero no la practico siempre</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q3" id="q3-3" value="escuchado-no-aplico">
+                                <label for="q3-3">La he escuchado pero no la aplico</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q3" id="q3-4" value="no-conozco">
+                                <label for="q3-4">No la conozco</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN II -->
+                <div class="form-section">
+                    <h2 class="section-title">II. USO ESPECÍFICO POR DISPOSITIVO</h2>
+                    
+                    <h3 class="subsection-title">📱 TELÉFONO CELULAR</h3>
+                    
+                    <div class="question-block">
+                        <label class="question-label">4. ¿Cuánto tiempo antes de dormir deja de usar su celular?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q4" id="q4-1" value="2h-mas">
+                                <label for="q4-1">2 horas o más</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q4" id="q4-2" value="1h">
+                                <label for="q4-2">1 hora</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q4" id="q4-3" value="30min">
+                                <label for="q4-3">30 minutos</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q4" id="q4-4" value="justo-antes">
+                                <label for="q4-4">Justo antes de dormir</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q4" id="q4-5" value="en-mano">
+                                <label for="q4-5">Me duermo con el celular en la mano</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <label class="question-label">5. ¿Utiliza modo nocturno o filtro de luz azul en su celular?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q5" id="q5-1" value="siempre">
+                                <label for="q5-1">Siempre, especialmente en la noche</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q5" id="q5-2" value="solo-noche">
+                                <label for="q5-2">Solo por la noche</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q5" id="q5-3" value="ocasional">
+                                <label for="q5-3">Ocasionalmente</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q5" id="q5-4" value="nunca">
+                                <label for="q5-4">Nunca</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <label class="question-label">6. ¿Dónde guarda su celular durante la noche?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q6" id="q6-1" value="otra-habitacion">
+                                <label for="q6-1">En otra habitación</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q6" id="q6-2" value="2m-lejos">
+                                <label for="q6-2">A más de 2 metros de la cama</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q6" id="q6-3" value="mesita">
+                                <label for="q6-3">En la mesita de noche</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q6" id="q6-4" value="almohada">
+                                <label for="q6-4">Bajo la almohada o en la cama</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">💻 COMPUTADORA/TABLET</h3>
+                    
+                    <div class="question-block">
+                        <label class="question-label">7. ¿Cómo es su postura al usar computadora/tablet?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q7" id="q7-1" value="ergonomica">
+                                <label for="q7-1">Espalda recta, pantalla a altura de ojos, pies apoyados</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q7" id="q7-2" value="moderada">
+                                <label for="q7-2">Moderadamente ergonómica</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q7" id="q7-3" value="inclinado">
+                                <label for="q7-3">Con frecuencia me inclino hacia adelante</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q7" id="q7-4" value="encorvado">
+                                <label for="q7-4">Totalmente encorvado/a</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <label class="question-label">8. ¿Su espacio de trabajo está optimizado ergonómicamente?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q8" id="q8-1" value="si-completo">
+                                <label for="q8-1">Sí, cumple con todos los requisitos ergonómicos</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q8" id="q8-2" value="algunas">
+                                <label for="q8-2">Tiene algunas adaptaciones ergonómicas</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q8" id="q8-3" value="gustaria-mejorar">
+                                <label for="q8-3">No, pero me gustaría mejorarlo</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q8" id="q8-4" value="no-puedo">
+                                <label for="q8-4">No, y no puedo cambiarlo</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">📺 TELEVISIÓN</h3>
+                    
+                    <div class="question-block">
+                        <label class="question-label">9. ¿Cuántas horas diarias ve televisión en promedio?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q9" id="q9-1" value="menos-1">
+                                <label for="q9-1">Menos de 1 hora</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q9" id="q9-2" value="1-2">
+                                <label for="q9-2">1-2 horas</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q9" id="q9-3" value="2-4">
+                                <label for="q9-3">2-4 horas</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q9" id="q9-4" value="mas-4">
+                                <label for="q9-4">Más de 4 horas</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <label class="question-label">10. ¿Realiza alguna actividad física mientras ve TV?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q10" id="q10-1" value="siempre-ejercicio">
+                                <label for="q10-1">Sí, siempre hago ejercicio ligero o estiramientos</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q10" id="q10-2" value="comerciales">
+                                <label for="q10-2">A veces me levanto durante los comerciales</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q10" id="q10-3" value="ocasional-camino">
+                                <label for="q10-3">Ocasionalmente camino mientras veo</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q10" id="q10-4" value="sentado">
+                                <label for="q10-4">No, permanezco sentado/acostado todo el tiempo</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">🎮 CONSOLAS DE VIDEOJUEGOS</h3>
+                    
+                    <div class="question-block">
+                        <label class="question-label">11. ¿Cuánto tiempo seguido juega sin descansar?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q11" id="q11-1" value="menos-1">
+                                <label for="q11-1">Menos de 1 hora</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q11" id="q11-2" value="1-2">
+                                <label for="q11-2">1-2 horas</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q11" id="q11-3" value="2-3">
+                                <label for="q11-3">2-3 horas</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q11" id="q11-4" value="mas-3">
+                                <label for="q11-4">Más de 3 horas</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <label class="question-label">12. ¿Realiza estiramientos para manos y muñecas antes/durante/después de jugar?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q12" id="q12-1" value="siempre">
+                                <label for="q12-1">Sí, siempre</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q12" id="q12-2" value="ocasional">
+                                <label for="q12-2">Ocasionalmente</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q12" id="q12-3" value="molestias">
+                                <label for="q12-3">Solo cuando siento molestias</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q12" id="q12-4" value="nunca">
+                                <label for="q12-4">Nunca</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">🥽 GAFAS DE REALIDAD VIRTUAL</h3>
+                    
+                    <div class="question-block">
+                        <label class="question-label">13. ¿Cuánto tiempo seguido usa dispositivos VR?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q13" id="q13-1" value="menos-30">
+                                <label for="q13-1">Menos de 30 minutos</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q13" id="q13-2" value="30-60">
+                                <label for="q13-2">30-60 minutos</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q13" id="q13-3" value="1-2">
+                                <label for="q13-3">1-2 horas</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q13" id="q13-4" value="mas-2">
+                                <label for="q13-4">Más de 2 horas</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <label class="question-label">14. ¿Toma descansos obligatorios después de usar VR?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q14" id="q14-1" value="si-15min">
+                                <label for="q14-1">Sí, mínimo 15 minutos por cada hora de uso</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q14" id="q14-2" value="aveces">
+                                <label for="q14-2">A veces tomo descansos breves</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q14" id="q14-3" value="raramente">
+                                <label for="q14-3">Raramente descanso</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q14" id="q14-4" value="no-necesario">
+                                <label for="q14-4">No considero necesario descansar</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN III -->
+                <div class="form-section">
+                    <h2 class="section-title">III. IMPACTO EN SALUD Y BIENESTAR</h2>
+                    
+                    <div class="question-block">
+                        <label class="question-label">15. ¿Ha experimentado alguno de estos síntomas relacionados con el uso de dispositivos?</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q15" id="q15-1" value="fatiga-visual">
+                                <label for="q15-1">Fatiga visual o visión borrosa</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q15" id="q15-2" value="dolor-cuello">
+                                <label for="q15-2">Dolor de cuello/hombros/espalda</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q15" id="q15-3" value="dolor-munecas">
+                                <label for="q15-3">Dolor de muñecas/manos</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q15" id="q15-4" value="dolores-cabeza">
+                                <label for="q15-4">Dolores de cabeza</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q15" id="q15-5" value="problemas-sueno">
+                                <label for="q15-5">Problemas para dormir</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q15" id="q15-6" value="ninguno">
+                                <label for="q15-6">Ninguno de los anteriores</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <label class="question-label">16. ¿Cómo calificaría la calidad de su sueño?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q16" id="q16-1" value="excelente">
+                                <label for="q16-1">Excelente - me despierto descansado/a</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q16" id="q16-2" value="buena">
+                                <label for="q16-2">Buena</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q16" id="q16-3" value="regular">
+                                <label for="q16-3">Regular</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q16" id="q16-4" value="mala">
+                                <label for="q16-4">Mala - frecuentemente cansado/a al despertar</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <label class="question-label">17. ¿El uso de dispositivos afecta sus relaciones personales?</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" name="q17" id="q17-1" value="no-equilibrio">
+                                <label for="q17-1">No, mantengo un buen equilibrio</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q17" id="q17-2" value="aveces-prefiero">
+                                <label for="q17-2">A veces prefiero dispositivos sobre interacción social</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q17" id="q17-3" value="afecta-atencion">
+                                <label for="q17-3">Con frecuencia afecta mi atención en conversaciones</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="q17" id="q17-4" value="conflictos">
+                                <label for="q17-4">Sí, ha generado conflictos en mis relaciones</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN IV -->
+                <div class="form-section">
+                    <h2 class="section-title">IV. COMPROMISOS PERSONALES</h2>
+                    
+                    <div class="question-block">
+                        <label class="question-label">18. ¿Qué cambios estaría dispuesto/a a implementar? (Seleccione todos los que apliquen)</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q18" id="q18-1" value="horarios-libres">
+                                <label for="q18-1">Establecer horarios libres de dispositivos</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q18" id="q18-2" value="cargador-fuera">
+                                <label for="q18-2">Crear un cargador nocturno fuera del dormitorio</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q18" id="q18-3" value="regla-20-20-20">
+                                <label for="q18-3">Implementar la regla 20-20-20 consistentemente</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q18" id="q18-4" value="ergonomia">
+                                <label for="q18-4">Mejorar mi ergonomía en el espacio de trabajo</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q18" id="q18-5" value="reducir-redes">
+                                <label for="q18-5">Reducir tiempo en redes sociales</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q18" id="q18-6" value="alarmas-pausas">
+                                <label for="q18-6">Usar alarmas para recordatorios de pausas activas</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q18" id="q18-7" value="ejercicios-manos">
+                                <label for="q18-7">Practicar ejercicios para manos y muñecas</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q18" id="q18-8" value="ninguno">
+                                <label for="q18-8">Ninguno por el momento</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <label class="question-label">19. ¿Qué apoyo necesitaría para lograr estos cambios?</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q19" id="q19-1" value="recordatorios">
+                                <label for="q19-1">Recordatorios en la aplicación</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q19" id="q19-2" value="guias">
+                                <label for="q19-2">Guías específicas por dispositivo</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q19" id="q19-3" value="ejercicios">
+                                <label for="q19-3">Ejercicios demostrativos</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q19" id="q19-4" value="seguimiento">
+                                <label for="q19-4">Seguimiento de progreso</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q19" id="q19-5" value="comunidad">
+                                <label for="q19-5">Comunidad de apoyo</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="q19" id="q19-6" value="asesoria">
+                                <label for="q19-6">Asesoría profesional</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <label class="question-label">20. En una escala del 1 al 10, ¿qué tan comprometido/a está con mejorar sus hábitos digitales?</label>
+                        <div class="scale-container">
+                            <div class="scale-option">
+                                <input type="radio" name="q20" id="q20-1" value="1">
+                                <label for="q20-1">1</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="q20" id="q20-2" value="2">
+                                <label for="q20-2">2</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="q20" id="q20-3" value="3">
+                                <label for="q20-3">3</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="q20" id="q20-4" value="4">
+                                <label for="q20-4">4</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="q20" id="q20-5" value="5">
+                                <label for="q20-5">5</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="q20" id="q20-6" value="6">
+                                <label for="q20-6">6</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="q20" id="q20-7" value="7">
+                                <label for="q20-7">7</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="q20" id="q20-8" value="8">
+                                <label for="q20-8">8</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="q20" id="q20-9" value="9">
+                                <label for="q20-9">9</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="q20" id="q20-10" value="10">
+                                <label for="q20-10">10</label>
+                            </div>
+                        </div>
+                        <div class="scale-labels">
+                            <span>Poco comprometido</span>
+                            <span>Muy comprometido</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PLAN DE ACCIÓN -->
+                <div class="action-plan">
+                    <h3>📊 Plan de Acción Personalizado</h3>
+                    
+                    <p style="text-align: center; color: var(--onaccent2); font-size: 1.7rem; margin-bottom: 3rem;">Basado en sus respuestas, le recomendamos los siguientes compromisos específicos:</p>
+                    
+                    <h4 style="color: var(--Background3); font-size: 2.3rem; margin-bottom: 2rem; text-align: center;">Compromisos Específicos por Dispositivo</h4>
+                    
+                    <div class="device-commitments">
+                        <div class="device-card">
+                            <h4>📱 CELULAR</h4>
+                            <label>
+                                <input type="checkbox" name="commit-cel-1">
+                                Establecer zona de carga fuera del dormitorio
+                            </label>
+                            <label>
+                                <input type="checkbox" name="commit-cel-2">
+                                Activar modo nocturno automático
+                            </label>
+                            <label>
+                                <input type="checkbox" name="commit-cel-3">
+                                Designar horarios sin celular
+                            </label>
+                        </div>
+
+                        <div class="device-card">
+                            <h4>💻 COMPUTADORA</h4>
+                            <label>
+                                <input type="checkbox" name="commit-pc-1">
+                                Configurar recordatorios de pausas cada 45 minutos
+                            </label>
+                            <label>
+                                <input type="checkbox" name="commit-pc-2">
+                                Ajustar altura de silla y monitor
+                            </label>
+                            <label>
+                                <input type="checkbox" name="commit-pc-3">
+                                Practicar ejercicios de postura
+                            </label>
+                        </div>
+
+                        <div class="device-card">
+                            <h4>📺 TV</h4>
+                            <label>
+                                <input type="checkbox" name="commit-tv-1">
+                                Limitar tiempo diario de visualización
+                            </label>
+                            <label>
+                                <input type="checkbox" name="commit-tv-2">
+                                Incorporar movimiento durante el uso
+                            </label>
+                            <label>
+                                <input type="checkbox" name="commit-tv-3">
+                                Crear horas familiares sin pantallas
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="weekly-goals">
+                        <h4>Metas Semanales Medibles</h4>
+                        
+                        <div class="goal-input">
+                            <label>
+                                <input type="checkbox" name="goal-1">
+                                Reducir
+                            </label>
+                            <input type="number" name="goal-1-hours" min="0" max="50" placeholder="0">
+                            <span style="color: var(--onaccent2);">horas de uso total semanal</span>
+                        </div>
+
+                        <div class="goal-input">
+                            <label>
+                                <input type="checkbox" name="goal-2">
+                                Implementar
+                            </label>
+                            <input type="number" name="goal-2-days" min="0" max="7" placeholder="0">
+                            <span style="color: var(--onaccent2);">días de desconexión nocturna</span>
+                        </div>
+
+                        <div class="goal-input">
+                            <label>
+                                <input type="checkbox" name="goal-3">
+                                Realizar
+                            </label>
+                            <input type="number" name="goal-3-minutes" min="0" max="120" placeholder="0">
+                            <span style="color: var(--onaccent2);">minutos de ejercicio postural diario</span>
+                        </div>
+
+                        <div class="goal-input">
+                            <label>
+                                <input type="checkbox" name="goal-4">
+                                Completar
+                            </label>
+                            <input type="number" name="goal-4-sessions" min="0" max="20" placeholder="0">
+                            <span style="color: var(--onaccent2);">sesiones de estiramiento para manos/muñecas semanales</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="submit-container">
+                    <button type="submit" class="submit-btn">Enviar Cuestionario</button>
+                    <p class="reminder-note">💡 Recuerde: Pequeños cambios consistentes generan grandes resultados en su salud digital. Le recomendamos reevaluar sus hábitos cada 3 meses.</p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="empresa-footer">
+            <div class="div-footer" id="footer-inicio">
+                <h3>Universal News</h3>
+                <p>Tu fuente confiable de información actualizada las 24 horas del día</p>
+            </div>
+            <div class="div-footer">
+                <h3>Secciones</h3>
+                <div class="ctn-links-footer">
+                    <a href="#">Tecnología</a>
+                    <a href="#">Economía</a>
+                    <a href="#">Deportes</a>
+                    <a href="#">Política</a>
+                </div>
+            </div>
+            <div class="div-footer">
+                <h3>Acerca de</h3>
+                <div class="ctn-links-footer">
+                    <a href="#">Nosotros</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Publicidad</a>
+                </div>
+            </div>
+            <div class="div-footer">
+                <h3>Legal</h3>
+                <div class="ctn-links-footer">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+        <div class="div-footer" id="cierre-footer">
+            <p>&copy; 2025 Universal News - Creado por Matias Galaz</p>
+        </div>
+    </footer>
+
+    <script>
+        // Funcionalidad del formulario
+        document.getElementById('digital-habits-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simular envío del formulario
+            alert('¡Gracias por completar el cuestionario! Sus respuestas han sido registradas. Recibirá un plan de acción personalizado por correo electrónico.');
+            
+            // Opcional: reiniciar el formulario
+            // this.reset();
+        });
+    </script>
+</body>
+</html>
