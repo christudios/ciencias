@@ -117,7 +117,6 @@ main {
 .contact-container {
     max-width: 130rem;
     margin: 6rem auto;
-    padding: 0 3rem 8rem 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
